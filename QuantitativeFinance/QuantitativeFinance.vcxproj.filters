@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Options">
+      <UniqueIdentifier>{73627215-8769-4813-9f34-a64b4e334e6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Functions">
+      <UniqueIdentifier>{1b2e9b3f-134e-40b1-99a0-b28695b1fe79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PayOffs">
+      <UniqueIdentifier>{3d9d5472-4a06-494b-af7c-e7884e0d55b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Functions">
+      <UniqueIdentifier>{112a264f-0d57-46eb-a737-5cac0edb05c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PayOffs">
+      <UniqueIdentifier>{9170bd56-152e-4e60-933c-61dd12588c69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Options">
+      <UniqueIdentifier>{dcc89ee2-8943-4a15-ba7e-cb18f00861f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Matrix">
+      <UniqueIdentifier>{793dbe21-8341-49b9-9186-1e3a9b6189ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Matrix">
+      <UniqueIdentifier>{53e20fd3-e069-4ed6-82df-637912bcb030}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="VanillaOption.h">
+      <Filter>Header Files\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="PayOff.h">
+      <Filter>Header Files\PayOffs</Filter>
+    </ClInclude>
+    <ClInclude Include="PayOffCall.h">
+      <Filter>Header Files\PayOffs</Filter>
+    </ClInclude>
+    <ClInclude Include="PayOffDoubleDigital.h">
+      <Filter>Header Files\PayOffs</Filter>
+    </ClInclude>
+    <ClInclude Include="QSMatrix.h">
+      <Filter>Header Files\Matrix</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantitativeFinance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="PayOff.cpp">
+      <Filter>Source Files\PayOffs</Filter>
+    </ClCompile>
+    <ClCompile Include="VanillaOption.cpp">
+      <Filter>Source Files\Options</Filter>
+    </ClCompile>
+    <ClCompile Include="PayOffCall.cpp">
+      <Filter>Source Files\PayOffs</Filter>
+    </ClCompile>
+    <ClCompile Include="PayOffDoubleDigital.cpp">
+      <Filter>Source Files\PayOffs</Filter>
+    </ClCompile>
+    <ClCompile Include="QSMatrix.cpp">
+      <Filter>Source Files\Matrix</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
