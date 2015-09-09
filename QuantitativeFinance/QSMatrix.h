@@ -10,9 +10,9 @@ class QSMatrix
 	unsigned cols;
 
 public:
-	virtual ~QSMatrix();
 	QSMatrix(unsigned _rows, unsigned _cols, const T& _initial);
 	QSMatrix(const QSMatrix<T>& rhs);
+	virtual ~QSMatrix();
 
 	QSMatrix<T>& operator= (const QSMatrix<T>& rhs);
 	QSMatrix<T>	 operator+ (const QSMatrix<T>& rhs);
@@ -36,4 +36,6 @@ public:
 
 	unsigned get_rows() const;
 	unsigned get_cols() const;
+
+	void print() const;
 };
