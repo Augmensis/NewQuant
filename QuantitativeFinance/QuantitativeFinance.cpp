@@ -2,36 +2,42 @@
 //
 
 #include "stdafx.h"
-#include "QSMatrix.cpp"
+//#include "QSMatrix.cpp"
 #include <iostream>
-
+#include <algorithm>
 #include <Eigen/Dense>
+#include "BlackScholes.h"
+
+using namespace std;
+
+
+
 
 int main()
 {
-	Eigen::MatrixXd m(3, 3);
+	int num_sims = 10000000;
+	double S = 100.0;	// Option Price
+	double K = 100.0;	// Strike Price
+	double r = 0.05;	// interest rate
+	double v = 0.2;		// 20% volatility
+	double T = 1.0;		// 1 year til expiry
+	double delta_S = 0.001;	 // Option price increment
 
-	m << 1, 2, 3, 4, 5, 6, 7, 8, 9;
+	//double call = BlackScholes::monte_carlo_call_price(num_sims, S, K, r, v, T);
+	//double put = BlackScholes::monte_carlo_put_price(num_sims, S, K, r, v, T);
 
-	std::cout << m << std::endl;
+	//double call_delta_f = BlackScholes::call_delta_fdm(S, K, r, v, T, delta_S);
+	//double call_gamma_f = BlackScholes::call_gamma_fdm(S, K, r, v, T, delta_S);
 
-	std::cin.get();
+	double call_delta_m = BlackScholes::monte_carlo_call_delta(num_sims, S, K, r, v, T, delta_S);
+	double call_gamma_m = BlackScholes::monte_carlo_call_gamma(num_sims, S, K, r, v, T, delta_S);
+
+	cout << endl << "Call Delta: " << call_delta_m << endl << endl;
+	cout << "Call Gamma: " << call_gamma_m;
+
+
+
+	cin.get();
 	return 0;
 }
 
-//static void testFunction() {
-//	QSMatrix<double> mat1(10, 10, 1.0);
-//	QSMatrix<double> mat2(10, 10, 2.0);
-//
-//	QSMatrix<double> mat3 = mat1 + mat2;
-//
-//	std::cout << "First matrix" << std::endl;
-//	mat1.print();
-//
-//	std::cout << "Second matrix" << std::endl;
-//	mat2.print();
-//
-//	std::cout << "Both added" << std::endl;
-//	mat3.print();
-//
-//}

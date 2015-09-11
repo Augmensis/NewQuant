@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="ExampleCode.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -66,6 +67,18 @@
     <ClInclude Include="QSMatrix.h">
       <Filter>Header Files\Matrix</Filter>
     </ClInclude>
+    <ClInclude Include="BlackScholes.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="AsianOption.h">
+      <Filter>Header Files\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="PayOffPut.h">
+      <Filter>Header Files\PayOffs</Filter>
+    </ClInclude>
+    <ClInclude Include="PathGeneration.h">
+      <Filter>Header Files\Functions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -91,6 +104,15 @@
     </ClCompile>
     <ClCompile Include="QSMatrix.cpp">
       <Filter>Source Files\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="BlackScholes.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="AsianOption.cpp">
+      <Filter>Source Files\Options</Filter>
+    </ClCompile>
+    <ClCompile Include="PayOffPut.cpp">
+      <Filter>Source Files\PayOffs</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
